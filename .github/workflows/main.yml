@@ -46,4 +46,4 @@ jobs:
         run: terraform init
 
       - name: Terraform Apply
-        run: terraform apply  # Removed --auto-approve flag
+        run: terraform apply --auto-approve 
