@@ -42,6 +42,8 @@ jobs:
 
       # - name: Deploy Static Site to S3 Bucket
       #   run: aws s3 sync . s3://myapp-site --delete
+      - name: Terraform Init (for apply)
+        run: terraform init
 
       - name: Terraform Apply
         run: terraform apply  # Removed --auto-approve flag
